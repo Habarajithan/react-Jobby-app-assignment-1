@@ -1,0 +1,876 @@
+* {
+  box-sizing: border-box;
+}
+
+.jobs-bg-container {
+  background-color: #000000;
+  min-height: 90vh;
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.failure-img {
+  height: 50%;
+}
+.failure-btn {
+  padding: 15px;
+  font-size: 10px;
+  color: white;
+  width: auto;
+}
+.failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.details-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.loader-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-cont2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.card {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+}
+
+.profile-card {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-heading {
+  font-size: 5px;
+  font-weight: 500;
+  color: #6366f1;
+}
+
+.profile-para {
+  font-size: 4px;
+  font-weight: 400;
+  color: #2c364c;
+}
+
+.profile-logo {
+  height: 10px;
+  width: 10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 575px) {
+  .jobs-bg-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .details-container {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px;
+  }
+
+  .profile-container {
+    width: 280px;
+    min-height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    height: 200px;
+    width: 280px;
+  }
+
+  .profile-card {
+    top: 30px;
+    left: 20px;
+    width: 45%;
+  }
+
+  .profile-heading {
+    font-size: 14px;
+  }
+
+  .profile-para {
+    font-size: 9px;
+  }
+
+  .profile-logo {
+    height: 35px;
+    width: 35px;
+  }
+
+  .job-type-input-para {
+    font-size: 10px;
+  }
+
+  .checkbox {
+    height: 12px;
+    width: 12px;
+  }
+
+  .employment-heading {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-input-container {
+    margin-bottom: 12px;
+  }
+
+  hr {
+    width: 280px;
+    margin-left: 0;
+  }
+
+  .search-cont {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+
+  .search-button {
+    width: 45px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 576px) {
+  .details-container {
+    width: 30%;
+    padding: 20px;
+  }
+
+  .profile-container {
+    width: 150px;
+    min-height: 230px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    height: 100px;
+    width: 150px;
+  }
+
+  .profile-card {
+    top: 15px;
+    left: 15px;
+  }
+
+  .profile-heading {
+    font-size: 8px;
+  }
+
+  .profile-para {
+    font-size: 7px;
+  }
+
+  .profile-logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .job-type-input-para {
+    font-size: 7px;
+  }
+
+  .checkbox {
+    height: 8px;
+    width: 8px;
+  }
+
+  hr {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media screen and (min-width: 768px) {
+  .details-container {
+    width: 30%;
+    padding: 25px;
+    margin-left: 5%;
+  }
+
+  .profile-container {
+    width: 200px;
+    min-height: 230px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    height: 140px;
+    width: 200px;
+  }
+
+  .profile-card {
+    top: 25px;
+    left: 20px;
+  }
+
+  .profile-heading {
+    font-size: 10px;
+  }
+
+  .profile-para {
+    font-size: 7.5px;
+  }
+
+  .profile-logo {
+    height: 28px;
+    width: 28px;
+  }
+
+  .job-type-input-para {
+    font-size: 8px;
+  }
+
+  .checkbox {
+    height: 9px;
+    width: 9px;
+  }
+
+  hr {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 992px) {
+  .details-container {
+    width: 30%;
+    padding: 30px;
+    margin-left: 5%;
+  }
+
+  .profile-container {
+    width: 250px;
+    min-height: 230px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    height: 170px;
+    width: 250px;
+  }
+
+  .profile-card {
+    top: 32px;
+    left: 25px;
+  }
+
+  .profile-heading {
+    font-size: 11px;
+  }
+
+  .profile-para {
+    font-size: 8px;
+  }
+
+  .profile-logo {
+    height: 34px;
+    width: 34px;
+  }
+
+  .job-type-input-para {
+    font-size: 9px;
+  }
+
+  .checkbox {
+    height: 10px;
+    width: 10px;
+  }
+
+  hr {
+    width: 250px;
+    margin-left: 0;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media screen and (min-width: 1200px) {
+  .details-container {
+    width: 320px;
+    padding: 15px;
+  }
+
+  .profile-container {
+    width: 320px;
+    min-height: 230px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    height: 220px;
+    width: 290px;
+  }
+
+  .profile-card {
+    top: 40px;
+    left: 30px;
+    width: 40%;
+  }
+
+  .profile-heading {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .profile-para {
+    font-size: 12px;
+  }
+
+  .profile-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .job-type-input-para {
+    font-size: 12px;
+  }
+
+  .checkbox {
+    height: 15px;
+    width: 15px;
+  }
+
+  .employment-heading {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  hr {
+    width: 290px;
+    margin-left: 0;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* =========================
+   COMMON FILTER STYLES
+========================= */
+
+.job-type-input-para {
+  font-weight: 400;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.checkbox {
+  color: white;
+  margin-right: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.employment-heading {
+  color: white;
+  font-weight: 500;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+  width: 100%;
+}
+
+.search-cont {
+  display: flex;
+  width: 300px;
+  height: 45px;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+.search-button {
+  width: 45px;
+  min-width: 45px;
+  height: 100%;
+  flex-shrink: 0;
+  border: none;
+  background-color: #272727;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-button svg {
+  font-size: 20px;
+}
+
+/* Mobile */
+@media screen and (max-width: 575px) {
+  .search-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-cont {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 576px) {
+  .search-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) {
+  .search-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .search-container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+  .search-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .search-cont {
+    width: 50%;
+  }
+}
+/*Job card*/
+/* =========================
+   JOB CARD
+========================= */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3%;
+}
+li {
+  margin-bottom: 20px;
+}
+
+.job-card {
+  width: 80%;
+  background-color: #262724;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  box-sizing: border-box;
+}
+
+/* Company logo + title */
+
+.job-logo-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.company-logo {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  margin-top: 12px;
+  flex-shrink: 0;
+}
+
+.job-title-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.job-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.rating-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.star {
+  color: #fbbf24;
+  background-color: transparent;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.rating-para {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Location + salary */
+
+.location-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.location-logo {
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.location-para {
+  color: #cbd5e1;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0 15px 0 0;
+}
+
+.lpa {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Horizontal line */
+
+.job-hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* Description */
+
+.description {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  margin: 0 0 8px;
+}
+
+.job-card .location-para:last-child {
+  line-height: 1.5;
+  margin-right: 0;
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 575px) {
+  .job-card {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .company-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    margin-top: 0;
+  }
+
+  .job-heading {
+    font-size: 13px;
+  }
+
+  .star {
+    font-size: 12px;
+  }
+
+  .rating-para {
+    font-size: 10px;
+  }
+
+  .location-cont {
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+
+  .location {
+    gap: 2px;
+  }
+
+  .location-logo {
+    font-size: 13px;
+  }
+
+  .location-para {
+    font-size: 9px;
+    margin-right: 10px;
+  }
+
+  .lpa {
+    font-size: 10px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .job-card .location-para:last-child {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .job-card {
+    width: 90%;
+  }
+
+  .company-logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .job-heading {
+    font-size: 14px;
+  }
+
+  .location-para {
+    font-size: 10px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .job-card {
+    width: 90%;
+  }
+
+  .company-logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  .job-heading {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media screen and (min-width: 992px) {
+  .job-card {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .company-logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .job-heading {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .job-card .location-para:last-child {
+    font-size: 11px;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media screen and (min-width: 1200px) {
+  .job-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .company-logo {
+    height: 55px;
+    width: 55px;
+  }
+
+  .job-heading {
+    font-size: 18px;
+  }
+
+  .rating-para {
+    font-size: 13px;
+  }
+
+  .location-para {
+    font-size: 12px;
+  }
+
+  .lpa {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .job-card .location-para:last-child {
+    font-size: 12px;
+  }
+}

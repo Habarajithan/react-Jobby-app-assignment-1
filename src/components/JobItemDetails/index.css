@@ -1,0 +1,79 @@
+.jobs-container-final {
+  background-color: #000000;
+  min-height: 90vh;
+  padding: 15px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.link-to-website {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 15px;
+}
+.fa {
+  margin-left: 5px;
+}
+.skill-cont {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 15px;
+}
+.life-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.life-img {
+  width: 400px;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.similar-jobs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.similar-head {
+  align-self: flex-start;
+  margin-top: 55px;
+  margin-bottom: 0px;
+}
+.similar-card {
+  background-color: #262724;
+  margin-right: 20px;
+  border-radius: 11px;
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 20%;
+}
+.jobs-list {
+  display: flex;
+}
+.skill-logo {
+  height: 50px;
+}
